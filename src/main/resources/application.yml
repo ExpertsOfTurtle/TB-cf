@@ -60,4 +60,4 @@ redis.expireTime: 3600
 constants:
   excludeRegex: cf
 url:
-  codeforcesHost: http://turtlebone.top/birth
+  codeforcesHost: http://turtlebone.top/codeforces

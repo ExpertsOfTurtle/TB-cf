@@ -69,7 +69,7 @@ public class CodeforcesController {
 		File file = new File(String.format("/data/web/codeforces/%d_%s.html", id, idx));
 		if (file.exists()) {
 			logger.info("文件存在，直接返回");
-			String location = String.format("%s/web/codeforces/%d_%s.html", HOST, id, idx);
+			String location = String.format("%s/%d_%s.html", HOST, id, idx);
 			try {
 				response.sendRedirect(location);
 			} catch (IOException e) {
@@ -94,7 +94,7 @@ public class CodeforcesController {
 			e.printStackTrace();
 		}
 		
-		String location = String.format("%s/web/codeforces/%d_%s.html", HOST, id, idx);
+		String location = String.format("%s/%d_%s.html", HOST, id, idx);
 		try {
 			response.sendRedirect(location);
 		} catch (IOException e) {
